@@ -1,0 +1,1045 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fitness Factory Gym — Dhanmondi, Dhaka | Bigger. Better. Stronger.</title>
+<meta name="description" content="Fitness Factory Gym on Satmasjid Road, Dhanmondi. New floor, new machines, exclusive opening packages. Open daily 8:00 AM – 10:30 PM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:wght@300;400;500;600;700&display=swap">
+<style>
+  /* ===== COLOUR SCHEMES (switch via data-theme on <html>) ===== */
+  :root, :root[data-theme="volt"] {
+    color-scheme: dark;
+    /* Volt: charcoal + electric lime */
+    --bg: oklch(15% 0.006 250);
+    --bg-deep: oklch(11% 0.006 250);
+    --bg-alt: oklch(12.5% 0.006 250);
+    --line: oklch(25% 0.01 250);
+    --line-2: oklch(31% 0.012 250);
+    --line-3: oklch(38% 0.012 250);
+    --text: oklch(97% 0.004 250);
+    --text-2: oklch(86% 0.006 250);
+    --muted: oklch(70% 0.01 250);
+    --dim: oklch(60% 0.01 250);
+    --accent: oklch(90% 0.21 122);
+    --accent-hi: oklch(94% 0.2 122);
+    --accent-text: oklch(90% 0.21 122);
+    --accent-text-hi: oklch(95% 0.18 122);
+    --on-accent: oklch(16% 0.035 125);
+    --on-accent-2: oklch(24% 0.05 125);
+    --hero-panel: oklch(21% 0.05 130);
+    --stripe: oklch(30% 0.05 130);
+    --kicker: oklch(82% 0.01 250);
+    --sub: oklch(82% 0.01 250);
+    --panel-glass: oklch(10% 0.006 250 / .9);
+    --bar-off: oklch(31% 0.01 250);
+    --zone-1: oklch(29% 0.03 250);
+    --zone-2: oklch(28% 0.06 130);
+    --zone-3: oklch(30% 0.02 250);
+    --zone-4: oklch(28% 0.04 190);
+    --surface-2: oklch(22% 0.012 250);
+    --scrim: oklch(5% 0.005 250 / .82);
+    --glow: 20%;
+    --foot-bg: oklch(9% 0.005 250);
+    --foot-strong: oklch(97% 0.004 250);
+    --foot-text: oklch(80% 0.006 250);
+    --foot-dim: oklch(62% 0.01 250);
+    --foot-head: oklch(60% 0.01 250);
+    --foot-line: oklch(24% 0.01 250);
+    --foot-accent: oklch(90% 0.21 122);
+    --display: 'Oswald', 'Arial Narrow', sans-serif;
+    --body: 'Barlow', 'Segoe UI', system-ui, sans-serif;
+    --gutter: clamp(20px, 4vw, 48px);
+  }
+  :root[data-theme="crimson"] {
+    color-scheme: dark;
+    /* Crimson: warm black + blood red */
+    --bg: oklch(15% 0.012 20);
+    --bg-deep: oklch(11% 0.01 20);
+    --bg-alt: oklch(12.5% 0.011 20);
+    --line: oklch(26% 0.02 20);
+    --line-2: oklch(32% 0.025 20);
+    --line-3: oklch(40% 0.03 20);
+    --text: oklch(97% 0.006 60);
+    --text-2: oklch(86% 0.01 40);
+    --muted: oklch(70% 0.014 30);
+    --dim: oklch(60% 0.014 30);
+    --accent: oklch(54% 0.235 27);
+    --accent-hi: oklch(60% 0.235 27);
+    --accent-text: oklch(68% 0.21 25);
+    --accent-text-hi: oklch(76% 0.17 25);
+    --on-accent: oklch(98% 0.006 60);
+    --on-accent-2: oklch(92% 0.03 30);
+    --hero-panel: oklch(22% 0.09 25);
+    --stripe: oklch(30% 0.09 25);
+    --kicker: oklch(82% 0.02 40);
+    --sub: oklch(82% 0.015 40);
+    --panel-glass: oklch(10% 0.01 20 / .9);
+    --bar-off: oklch(32% 0.02 20);
+    --zone-1: oklch(29% 0.04 20);
+    --zone-2: oklch(28% 0.09 25);
+    --zone-3: oklch(30% 0.03 20);
+    --zone-4: oklch(27% 0.06 40);
+    --surface-2: oklch(22% 0.02 20);
+    --scrim: oklch(5% 0.01 20 / .84);
+    --glow: 26%;
+    --foot-bg: oklch(9% 0.008 20);
+    --foot-strong: oklch(97% 0.006 60);
+    --foot-text: oklch(80% 0.01 40);
+    --foot-dim: oklch(62% 0.014 30);
+    --foot-head: oklch(60% 0.014 30);
+    --foot-line: oklch(24% 0.02 20);
+    --foot-accent: oklch(68% 0.21 25);
+  }
+  :root[data-theme="daylight"] {
+    color-scheme: light;
+    /* Daylight: warm white + cobalt, dark footer */
+    --bg: oklch(97.5% 0.004 95);
+    --bg-deep: oklch(100% 0 0);
+    --bg-alt: oklch(95.5% 0.006 95);
+    --line: oklch(90% 0.006 95);
+    --line-2: oklch(85% 0.008 95);
+    --line-3: oklch(76% 0.01 95);
+    --text: oklch(17% 0.012 265);
+    --text-2: oklch(30% 0.012 265);
+    --muted: oklch(44% 0.012 265);
+    --dim: oklch(52% 0.01 265);
+    --accent: oklch(50% 0.22 264);
+    --accent-hi: oklch(56% 0.22 264);
+    --accent-text: oklch(48% 0.22 264);
+    --accent-text-hi: oklch(40% 0.22 264);
+    --on-accent: oklch(99% 0.003 264);
+    --on-accent-2: oklch(93% 0.03 264);
+    --hero-panel: oklch(93% 0.045 264);
+    --stripe: oklch(84% 0.07 264);
+    --kicker: oklch(38% 0.012 265);
+    --sub: oklch(38% 0.012 265);
+    --panel-glass: oklch(100% 0 0 / .92);
+    --bar-off: oklch(88% 0.008 95);
+    --zone-1: oklch(90% 0.035 264);
+    --zone-2: oklch(88% 0.055 250);
+    --zone-3: oklch(91% 0.035 230);
+    --zone-4: oklch(89% 0.045 285);
+    --surface-2: oklch(94% 0.012 264);
+    --scrim: oklch(20% 0.03 265 / .55);
+    --glow: 14%;
+    --foot-bg: oklch(16% 0.025 265);
+    --foot-strong: oklch(98% 0.004 264);
+    --foot-text: oklch(82% 0.01 265);
+    --foot-dim: oklch(64% 0.012 265);
+    --foot-head: oklch(62% 0.012 265);
+    --foot-line: oklch(28% 0.02 265);
+    --foot-accent: oklch(74% 0.16 264);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+  body {
+    margin: 0;
+    font-family: var(--body);
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+  h1, h2, h3 { font-family: var(--display); margin: 0; font-weight: 600; text-transform: uppercase; }
+  p { margin: 0; }
+  a { color: var(--accent-text); text-decoration: none; }
+  a:hover { color: var(--accent-text-hi); }
+  button { font-family: var(--display); cursor: pointer; border: none; text-transform: uppercase; }
+  :focus-visible { outline: 2px solid var(--accent-hi); outline-offset: 3px; }
+  .wrap { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 var(--gutter); }
+  .section { padding: clamp(72px, 10vw, 120px) 0; }
+  .eyebrow { font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-text); font-weight: 600; }
+  .section-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; margin-bottom: 56px; flex-wrap: wrap; }
+  .section-head .stack { display: flex; flex-direction: column; gap: 14px; max-width: 760px; }
+  .section-head h2, .section-title { font-size: clamp(32px, 4.6vw, 44px); color: var(--text); line-height: 1.05; }
+  .lede { font-size: 15px; line-height: 1.6; color: var(--muted); max-width: 400px; }
+
+  /* Buttons */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 17px 34px; font-family: var(--display); text-transform: uppercase; font-size: 14px; letter-spacing: 0.06em; font-weight: 700; transition: background .15s, color .15s, border-color .15s, transform .15s; }
+  .btn-primary { background: var(--accent); color: var(--on-accent); }
+  .btn-primary:hover { background: var(--accent-hi); color: var(--on-accent); transform: translateY(-1px); }
+  .btn-ghost { background: transparent; color: var(--text); border: 2px solid var(--line-3); }
+  .btn-ghost:hover { border-color: var(--text); color: var(--text); }
+  .btn-sm { padding: 13px 24px; font-size: 13px; }
+
+  /* Preview strip */
+  .preview-strip { background: var(--accent); color: var(--on-accent); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; text-align: center; padding: 8px var(--gutter); }
+
+  /* Nav */
+  .nav { position: sticky; top: 0; z-index: 40; background: var(--bg-deep); border-bottom: 1px solid var(--line); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 84px; gap: 24px; }
+  .logo { font-family: var(--display); font-size: 24px; letter-spacing: 0.03em; font-weight: 700; color: var(--text); text-transform: uppercase; white-space: nowrap; }
+  .logo span { color: var(--accent-text); }
+  .nav-links { display: flex; align-items: center; gap: clamp(20px, 3vw, 40px); }
+  .nav-links a { font-size: 13px; color: var(--text-2); letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500; }
+  .nav-links a:hover { color: var(--accent-text); }
+  .nav-cta { display: flex; align-items: center; gap: 16px; }
+  .nav-phone { font-size: 13px; color: var(--text-2); font-weight: 600; letter-spacing: 0.04em; white-space: nowrap; }
+  .nav-phone:hover { color: var(--accent-text); }
+  .burger { display: none; background: transparent; border: 1px solid var(--line-3); color: var(--text); width: 44px; height: 44px; align-items: center; justify-content: center; }
+  .burger svg { width: 20px; height: 20px; }
+  .mobile-panel { display: none; background: var(--bg-deep); border-bottom: 1px solid var(--line); padding: 8px var(--gutter) 24px; }
+  .mobile-panel.open { display: block; }
+  .mobile-panel a { display: block; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-2); font-weight: 500; }
+  .mobile-panel .btn { margin-top: 20px; width: 100%; }
+  .panel-theme { display: flex; align-items: center; gap: 12px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+  .panel-theme .dock-label { margin-right: auto; }
+
+  /* Hero */
+  .hero { position: relative; min-height: 720px; display: flex; align-items: center; overflow: hidden; padding: 96px 0 140px; background: linear-gradient(115deg, var(--bg-deep) 0%, var(--bg-deep) 46%, var(--hero-panel) 46.3%, var(--bg) 100%); }
+  .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .35; }
+  .hero-stripes { position: absolute; right: 0; top: 0; bottom: 0; width: 46%; background: repeating-linear-gradient(115deg, var(--stripe) 0px, var(--stripe) 2px, transparent 2px, transparent 64px); opacity: .5; pointer-events: none; }
+  .hero-frame { position: absolute; right: -60px; top: -40px; width: 340px; height: 340px; border: 2px solid var(--accent); opacity: .35; transform: rotate(12deg); pointer-events: none; }
+  .hero-inner { position: relative; display: flex; flex-direction: column; gap: 26px; }
+  .kicker { display: flex; align-items: center; gap: 10px; }
+  .kicker i { display: block; width: 32px; height: 3px; background: var(--accent); }
+  .kicker span { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--kicker); font-weight: 600; }
+  .hero h1 { font-size: clamp(56px, 9.5vw, 104px); line-height: .96; color: var(--text); font-weight: 700; letter-spacing: -0.01em; }
+  .hero h1 em { font-style: normal; color: var(--accent-text); }
+  .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(55% 90% at 88% 15%, color-mix(in oklch, var(--accent) var(--glow), transparent), transparent 70%); pointer-events: none; }
+  .hero p.sub { font-size: 19px; line-height: 1.6; max-width: 520px; color: var(--sub); }
+  .hero p.sub strong { color: var(--text); font-weight: 600; }
+  .hero-actions { display: flex; align-items: center; gap: 16px; margin-top: 10px; flex-wrap: wrap; }
+
+  .capacity { position: absolute; right: var(--gutter); bottom: 44px; background: var(--panel-glass); border: 1px solid var(--line-2); padding: 18px 24px; display: flex; align-items: center; gap: 16px; max-width: 340px; z-index: 2; }
+  .bars { display: flex; gap: 4px; align-items: flex-end; }
+  .bars b { display: block; width: 7px; height: 22px; background: var(--bar-off); }
+  .bars b.on { background: var(--accent); }
+  .capacity .label { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 600; display: block; }
+  .capacity .value { font-size: 14px; color: var(--text); font-weight: 600; text-transform: uppercase; font-family: var(--display); display: block; margin-top: 3px; }
+  .capacity .note { font-size: 10px; color: var(--dim); letter-spacing: .06em; display: block; margin-top: 4px; text-transform: uppercase; }
+
+  /* Amenity band */
+  .amenities { background: var(--bg-deep); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .amenities ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
+  .amenities li { flex: 1 1 auto; padding: 22px 24px; text-align: center; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--text-2); font-weight: 600; border-right: 1px solid var(--line); white-space: nowrap; }
+  .amenities li:last-child { border-right: none; }
+
+  /* Promo */
+  .promo { background: var(--accent); color: var(--on-accent); }
+  .promo-inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center; padding-block: 56px; }
+  .promo .eyebrow { color: var(--on-accent-2); }
+  .promo h2 { font-size: clamp(30px, 4vw, 44px); line-height: 1.05; color: var(--on-accent); margin-top: 12px; }
+  .promo p { margin-top: 14px; color: var(--on-accent-2); max-width: 460px; font-size: 16px; }
+  .promo-deals { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .deal { background: var(--bg-deep); color: var(--text); padding: 24px; display: flex; flex-direction: column; gap: 6px; }
+  .deal .term { font-family: var(--display); font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+  .deal .amt { font-family: var(--display); font-size: 36px; font-weight: 700; line-height: 1; }
+  .deal .amt small { font-size: 14px; color: var(--accent-text); margin-right: 6px; letter-spacing: .05em; }
+  .deal .per { font-size: 12px; color: var(--dim); }
+  .deal button { margin-top: 14px; padding: 12px; background: var(--accent); color: var(--on-accent); font-size: 12px; font-weight: 700; letter-spacing: .06em; }
+  .deal button:hover { background: var(--accent-hi); }
+
+  /* Arsenal */
+  .arsenal { background: var(--bg-alt); }
+  .zones { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+  .zone { display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--line); }
+  .zone .photo { height: 340px; position: relative; background-size: cover; background-position: center; display: flex; align-items: flex-end; justify-content: flex-start; }
+  .zone .photo::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--accent); z-index: 1; }
+  .zone .photo .slot { position: absolute; right: 14px; top: 14px; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--dim); border: 1px dashed var(--line-3); padding: 4px 8px; }
+  .zone .photo svg { position: absolute; left: 24px; bottom: 22px; width: 56px; height: 56px; stroke: var(--accent); fill: none; stroke-width: 1.5; opacity: .9; }
+  .zone .photo.has-img .slot, .zone .photo.has-img svg { display: none; }
+  .zone .cap { background: var(--bg-deep); padding: 20px; display: flex; flex-direction: column; gap: 4px; border-top: 1px solid var(--line); }
+  .zone .cap strong { font-size: 15px; font-family: var(--display); font-weight: 600; text-transform: uppercase; }
+  .zone .cap span { font-size: 13px; color: var(--dim); }
+  .zone:nth-child(1) .photo { background-image: linear-gradient(165deg, var(--zone-1) 0%, var(--bg) 100%); }
+  .zone:nth-child(2) .photo { background-image: linear-gradient(165deg, var(--zone-2) 0%, var(--bg) 100%); }
+  .zone:nth-child(3) .photo { background-image: linear-gradient(165deg, var(--zone-3) 0%, var(--bg) 100%); }
+  .zone:nth-child(4) .photo { background-image: linear-gradient(165deg, var(--zone-4) 0%, var(--bg) 100%); }
+  .perks { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+  .perks span { border: 1px solid var(--line-2); padding: 10px 18px; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--text-2); font-weight: 600; }
+  .perks span::before { content: ''; display: inline-block; width: 6px; height: 6px; background: var(--accent); margin-right: 10px; vertical-align: middle; }
+
+  /* Timings */
+  .timings { background: var(--bg-deep); }
+  .chips { display: flex; gap: 10px; margin-bottom: 32px; flex-wrap: wrap; }
+  .chip { padding: 10px 22px; border: 1px solid var(--line-3); background: transparent; color: var(--text-2); font-size: 12px; font-weight: 700; letter-spacing: .05em; }
+  .chip:hover { border-color: var(--text); }
+  .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+  .rows { display: flex; flex-direction: column; }
+  .row { display: grid; grid-template-columns: 200px 1fr 1.2fr 130px 110px; align-items: center; gap: 24px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+  .row[hidden] { display: none; }
+  .row .time { font-size: 15px; color: var(--muted); font-family: var(--display); letter-spacing: .02em; }
+  .row .name { font-size: 18px; font-family: var(--display); font-weight: 600; text-transform: uppercase; }
+  .row .who { font-size: 14px; color: var(--muted); }
+  .row .crowd { display: flex; align-items: center; gap: 10px; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  .row .crowd .bars b { width: 5px; height: 16px; }
+  .row .now { justify-self: end; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: var(--on-accent); background: var(--accent); padding: 5px 10px; }
+  .row .now[hidden] { display: none; }
+  .fine { font-size: 12px; color: var(--dim); margin-top: 20px; }
+
+  /* Coaching */
+  .coaching { background: var(--bg-alt); }
+  .coach-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  .coach { display: flex; flex-direction: column; gap: 18px; background: var(--bg-deep); border: 1px solid var(--line); padding: 32px; position: relative; }
+  .coach::before { content: ''; position: absolute; left: 0; top: 0; width: 40px; height: 4px; background: var(--accent); }
+  .coach .num { width: 68px; height: 68px; background: var(--surface-2); border: 1px solid var(--line-3); display: flex; align-items: center; justify-content: center; font-family: var(--display); font-size: 22px; color: var(--accent-text); font-weight: 700; }
+  .coach h3 { font-size: 19px; }
+  .coach .spec { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-text); font-weight: 600; margin-top: 6px; display: block; }
+  .coach p { font-size: 14px; line-height: 1.65; color: var(--muted); }
+  .coach a { font-size: 13px; font-weight: 700; margin-top: 4px; text-transform: uppercase; letter-spacing: .03em; }
+
+  /* Membership */
+  .membership { background: var(--bg-deep); }
+  .membership .center { display: flex; flex-direction: column; gap: 14px; text-align: center; align-items: center; margin-bottom: 64px; }
+  .membership .center p { font-size: 15px; line-height: 1.6; color: var(--muted); max-width: 520px; }
+  .tiers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; max-width: 1120px; margin: 0 auto; }
+  .tier { display: flex; flex-direction: column; gap: 24px; padding: 40px 32px; border: 1px solid var(--line-2); background: var(--bg-alt); position: relative; }
+  .tier .tname { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 700; font-family: var(--display); }
+  .tier .price { display: flex; flex-direction: column; gap: 4px; }
+  .tier .price .amt { font-family: var(--display); font-size: 44px; font-weight: 700; line-height: 1; display: flex; align-items: baseline; gap: 8px; }
+  .tier .price .amt small { font-size: 16px; letter-spacing: .05em; color: var(--accent-text); }
+  .tier .price .per { font-size: 13px; color: var(--dim); }
+  .tier hr { border: 0; height: 1px; background: var(--line); margin: 0; width: 100%; }
+  .tier ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+  .tier li { font-size: 14px; color: var(--text-2); padding-left: 22px; position: relative; }
+  .tier li::before { content: ''; position: absolute; left: 0; top: 7px; width: 8px; height: 8px; background: var(--accent); }
+  .tier button { margin-top: auto; padding: 15px; border: 1px solid var(--text); background: transparent; color: var(--text); font-size: 13px; font-weight: 700; letter-spacing: .05em; }
+  .tier button:hover { background: var(--text); color: var(--bg-deep); }
+  .tier .badge { position: absolute; top: -13px; left: 32px; background: var(--text); color: var(--bg); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; font-weight: 700; padding: 5px 14px; }
+  .tier.hot { background: var(--accent); border-color: var(--accent); transform: translateY(-12px); box-shadow: 0 24px 60px -20px color-mix(in oklch, var(--accent) 55%, transparent); }
+  .tier.hot .tname, .tier.hot .price .per, .tier.hot .price .amt small { color: var(--on-accent-2); }
+  .tier.hot .price .amt { color: var(--on-accent); }
+  .tier.hot hr { background: color-mix(in oklch, var(--on-accent) 28%, transparent); }
+  .tier.hot li { color: var(--on-accent); }
+  .tier.hot li::before { background: var(--on-accent); }
+  .tier.hot button { background: var(--on-accent); color: var(--accent); border-color: var(--on-accent); }
+  .tier.hot button:hover { background: color-mix(in oklch, var(--on-accent) 88%, var(--accent)); color: var(--accent); }
+  .tier .tbd { font-size: 12px; color: var(--dim); }
+  .pay { display: flex; justify-content: center; align-items: center; gap: 12px 24px; flex-wrap: wrap; margin-top: 48px; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  .pay span.m { border: 1px solid var(--line-2); padding: 8px 16px; color: var(--text-2); }
+
+  /* Visit */
+  .visit { background: var(--bg-alt); }
+  .visit-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  .info { border: 1px solid var(--line); background: var(--bg-deep); padding: 32px; display: flex; flex-direction: column; gap: 10px; }
+  .info .k { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-text); font-weight: 700; }
+  .info .v { font-family: var(--display); font-size: 22px; text-transform: uppercase; line-height: 1.2; font-weight: 600; }
+  .info .s { font-size: 14px; color: var(--muted); }
+  .visit-actions { display: flex; gap: 16px; margin-top: 32px; flex-wrap: wrap; }
+
+  /* Footer */
+  footer { background: var(--foot-bg); padding: 80px 0 32px; }
+  .foot-top { display: flex; justify-content: space-between; gap: 48px; flex-wrap: wrap; }
+  .foot-brand { display: flex; flex-direction: column; gap: 16px; max-width: 320px; }
+  .foot-brand .logo { font-size: 22px; color: var(--foot-strong); }
+  .foot-brand .logo span { color: var(--foot-accent); }
+  .foot-brand p { font-size: 13px; line-height: 1.7; color: var(--foot-dim); }
+  .foot-cols { display: flex; gap: 72px; flex-wrap: wrap; }
+  .foot-col { display: flex; flex-direction: column; gap: 14px; }
+  .foot-col h4 { margin: 0; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--foot-head); font-weight: 700; font-family: var(--body); }
+  .foot-col a { font-size: 14px; color: var(--foot-text); }
+  .foot-col a:hover { color: var(--foot-accent); }
+  .foot-rule { height: 1px; background: var(--foot-line); margin: 56px 0 24px; }
+  .copy { font-size: 12px; color: var(--foot-head); }
+
+  /* Modal */
+  .overlay { position: fixed; inset: 0; z-index: 100; background: var(--scrim); display: none; align-items: center; justify-content: center; padding: 20px; }
+  .overlay.open { display: flex; }
+  .modal { width: 100%; max-width: 480px; max-height: 92vh; overflow: auto; background: var(--bg-alt); border: 1px solid var(--line-3); padding: 36px; position: relative; }
+  .modal::before { content: ''; position: absolute; left: 0; top: 0; width: 56px; height: 4px; background: var(--accent); }
+  .modal h3 { font-size: 26px; margin-bottom: 8px; }
+  .modal .sub { font-size: 14px; color: var(--muted); margin-bottom: 24px; }
+  .close { position: absolute; right: 12px; top: 12px; background: transparent; color: var(--muted); width: 40px; height: 40px; font-size: 24px; line-height: 1; font-family: var(--body); }
+  .close:hover { color: var(--text); }
+  .field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+  .field label { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  .field input, .field select { background: var(--bg-deep); border: 1px solid var(--line-3); color: var(--text); font-family: var(--body); font-size: 16px; padding: 13px 14px; width: 100%; border-radius: 0; }
+  .field input:focus, .field select:focus { outline: none; border-color: var(--accent); }
+  .modal .btn { width: 100%; margin-top: 8px; }
+  .modal .alt { font-size: 13px; color: var(--dim); text-align: center; margin-top: 16px; }
+  .modal .alt a { font-weight: 600; }
+  .modal .done { display: none; text-align: center; padding: 12px 0 4px; }
+  .modal .done.show { display: block; }
+  .modal .done h3 { font-size: 24px; }
+  .modal .done p { color: var(--muted); font-size: 14px; margin: 10px 0 20px; }
+  .demo-note { font-size: 11px; color: var(--dim); margin-top: 18px; border-top: 1px solid var(--line); padding-top: 14px; }
+
+
+  /* Theme switcher */
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .theme-dock { position: fixed; left: 16px; bottom: 16px; z-index: 90; display: flex; align-items: center; gap: 10px; padding: 8px 14px 8px 16px; background: var(--bg-deep); border: 1px solid var(--line-3); box-shadow: 0 10px 34px oklch(0% 0 0 / .35); }
+  .theme-dock[hidden] { display: none; }
+  .dock-label { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 700; margin-right: 4px; }
+  .dock-name { font-family: var(--display); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--text); font-weight: 600; min-width: 62px; }
+  .sw { width: 30px; height: 30px; border-radius: 50%; padding: 0; border: 2px solid var(--line-3); background: linear-gradient(135deg, var(--sw-bg) 50%, var(--sw-ac) 50%); transition: transform .15s; }
+  .sw:hover { transform: scale(1.1); }
+  .sw[aria-pressed="true"] { border-color: var(--text); box-shadow: 0 0 0 2px var(--bg-deep), 0 0 0 4px var(--accent); }
+  html.theme-anim body, html.theme-anim body * { transition: background-color .35s, color .35s, border-color .35s !important; }
+
+  /* Responsive */
+  @media (max-width: 1080px) {
+    .nav-phone { display: none; }
+    .zones { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .row { grid-template-columns: 170px 1fr 1fr 110px; }
+    .row .now { grid-column: 4; grid-row: 1; }
+    .row .crowd { grid-column: 4; }
+  }
+  @media (max-width: 900px) {
+    .nav-links, .nav-cta .btn { display: none; }
+    .theme-dock { display: none; }
+    .burger { display: inline-flex; }
+    .nav-inner { height: 72px; }
+    html { scroll-padding-top: 80px; }
+    .hero { min-height: 0; padding: 72px 0 200px; background: linear-gradient(160deg, var(--bg-deep) 0%, var(--bg-deep) 60%, var(--hero-panel) 100%); }
+    .hero-stripes { width: 100%; opacity: .25; }
+    .capacity { left: var(--gutter); right: var(--gutter); max-width: none; bottom: 32px; }
+    .promo-inner { grid-template-columns: 1fr; gap: 32px; padding-block: 48px; }
+    .coach-grid { grid-template-columns: 1fr; }
+    .tiers { grid-template-columns: 1fr; max-width: 480px; }
+    .tier.hot { transform: none; }
+    .visit-grid { grid-template-columns: 1fr; }
+    .amenities li { flex: 1 1 50%; border-bottom: 1px solid var(--line); }
+    .row { grid-template-columns: 1fr auto; gap: 6px 16px; padding: 20px 0; }
+    .row .time { grid-column: 1; }
+    .row .name { grid-column: 1; grid-row: 2; }
+    .row .who { grid-column: 1; grid-row: 3; }
+    .row .crowd { grid-column: 2; grid-row: 1; justify-self: end; }
+    .row .now { grid-column: 2; grid-row: 2; justify-self: end; }
+  }
+  @media (max-width: 560px) {
+    .zones { grid-template-columns: 1fr; }
+    .zone .photo { height: 240px; }
+    .promo-deals { grid-template-columns: 1fr; }
+    .foot-cols { gap: 40px; }
+    .hero p.sub { font-size: 17px; }
+    .hero-actions .btn { width: 100%; }
+    .visit-actions .btn { width: 100%; }
+    .modal { padding: 28px 22px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .btn { transition: none; }
+    html.theme-anim body, html.theme-anim body * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-strip" id="previewStrip" hidden>Concept preview · prepared for Fitness Factory Gym, Dhanmondi</div>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="#top" aria-label="Fitness Factory — home">Fitness <span>Factory</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#arsenal">The Arsenal</a>
+      <a href="#timings">Timings</a>
+      <a href="#coaching">Coaching</a>
+      <a href="#membership">Membership</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+8801761191187" data-phone>01761-191187</a>
+      <button class="btn btn-primary btn-sm" data-open="tour">Book a Free Tour</button>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="#arsenal">The Arsenal</a>
+    <a href="#timings">Timings</a>
+    <a href="#coaching">Coaching</a>
+    <a href="#membership">Membership</a>
+    <a href="#visit">Visit</a>
+    <div class="panel-theme" id="panelTheme" role="group" aria-label="Colour scheme">
+      <span class="dock-label">Colour scheme</span>
+      <button class="sw" type="button" data-theme-pick="volt" aria-pressed="true" title="Volt" style="--sw-bg: oklch(15% 0.006 250); --sw-ac: oklch(90% 0.21 122);"><span class="sr-only">Volt</span></button>
+      <button class="sw" type="button" data-theme-pick="crimson" aria-pressed="false" title="Crimson" style="--sw-bg: oklch(15% 0.012 20); --sw-ac: oklch(54% 0.235 27);"><span class="sr-only">Crimson</span></button>
+      <button class="sw" type="button" data-theme-pick="daylight" aria-pressed="false" title="Daylight" style="--sw-bg: oklch(97.5% 0.004 95); --sw-ac: oklch(50% 0.22 264);"><span class="sr-only">Daylight</span></button>
+    </div>
+    <button class="btn btn-primary" data-open="tour">Book a Free Tour</button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-h">
+  <div class="hero-stripes"></div>
+  <div class="hero-frame"></div>
+  <div class="wrap hero-inner">
+    <div class="kicker"><i></i><span>Satmasjid Road · Dhanmondi · Now open</span></div>
+    <h1 id="hero-h">Bigger.<br>Better.<br><em>Stronger.</em></h1>
+    <p class="sub">Four years in the making. A brand-new Fitness Factory with more floor, new machines and one rule: <strong>Work Harder. No Excuse.</strong></p>
+    <div class="hero-actions">
+      <button class="btn btn-primary" data-open="tour">Book a Free Tour</button>
+      <a class="btn btn-ghost" href="#membership">View Memberships</a>
+    </div>
+  </div>
+
+  <div class="capacity" role="status" aria-live="polite">
+    <div class="bars" id="capBars" aria-hidden="true"><b></b><b></b><b></b></div>
+    <div>
+      <span class="label">Live Capacity</span>
+      <span class="value" id="capText">Checking…</span>
+      <span class="note" data-sample>Sample data · live in the full build</span>
+    </div>
+  </div>
+</section>
+
+<!-- AMENITY BAND -->
+<div class="amenities">
+  <div class="wrap">
+    <ul>
+      <li>Open daily 8:00 AM – 10:30 PM</li>
+      <li>Air-conditioned floor</li>
+      <li>Steam bath</li>
+      <li>Ladies time · ladies trainer</li>
+      <li>Free Wi-Fi</li>
+    </ul>
+  </div>
+</div>
+
+<!-- PROMO -->
+<section class="promo" aria-labelledby="promo-h">
+  <div class="wrap promo-inner">
+    <div>
+      <span class="eyebrow">Exclusive Opening Packages</span>
+      <h2 id="promo-h">Lock in opening prices.</h2>
+      <p>Join at launch rates while the offer runs. Register online in under a minute, pay by bKash, Nagad or cash at the desk.</p>
+    </div>
+    <div class="promo-deals">
+      <div class="deal">
+        <span class="term">3 Months</span>
+        <span class="amt"><small>TK</small>4,799</span>
+        <span class="per">≈ TK 1,600 / month</span>
+        <button data-open="3m">Claim this offer</button>
+      </div>
+      <div class="deal">
+        <span class="term">1 Year</span>
+        <span class="amt"><small>TK</small>10,499</span>
+        <span class="per">≈ TK 875 / month</span>
+        <button data-open="12m">Claim this offer</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARSENAL -->
+<section class="section arsenal" id="arsenal" aria-labelledby="arsenal-h">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="stack">
+        <span class="eyebrow">The Arsenal</span>
+        <h2 id="arsenal-h">Built to be used hard.</h2>
+      </div>
+      <p class="lede">New floor, new machines. Free weights, leg machines and every amenity under one roof.</p>
+    </div>
+
+    <div class="zones">
+      <figure class="zone" style="margin:0">
+        <div class="photo" data-photo="freeWeights">
+          <span class="slot">Photo</span>
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M6 26v12M12 20v24M52 20v24M58 26v12M12 32h40"/></svg>
+        </div>
+        <figcaption class="cap"><strong>Free Weights</strong><span>The full free-weight section</span></figcaption>
+      </figure>
+      <figure class="zone" style="margin:0">
+        <div class="photo" data-photo="legMachines">
+          <span class="slot">Photo</span>
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 54h36M20 54V20l12-8 12 8v34M20 34h24"/></svg>
+        </div>
+        <figcaption class="cap"><strong>Leg Machines</strong><span>New machines for heavy leg days</span></figcaption>
+      </figure>
+      <figure class="zone" style="margin:0">
+        <div class="photo" data-photo="steam">
+          <span class="slot">Photo</span>
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 50c-6-6 6-10 0-18s6-10 0-16M32 50c-6-6 6-10 0-18s6-10 0-16M44 50c-6-6 6-10 0-18s6-10 0-16"/></svg>
+        </div>
+        <figcaption class="cap"><strong>Steam Bath</strong><span>Recover after every session</span></figcaption>
+      </figure>
+      <figure class="zone" style="margin:0">
+        <div class="photo" data-photo="lockers">
+          <span class="slot">Photo</span>
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 10h16v44H14zM34 10h16v44H34zM24 30v6M44 30v6"/></svg>
+        </div>
+        <figcaption class="cap"><strong>Lockers &amp; Washrooms</strong><span>Secure storage, clean changing</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="perks" aria-label="Amenities">
+      <span>Customised workout plan</span>
+      <span>Customised diet plan</span>
+      <span>Professional trainers</span>
+      <span>Combined time</span>
+      <span>Ladies time</span>
+      <span>CCTV secured</span>
+      <span>Bike parking</span>
+    </div>
+  </div>
+</section>
+
+<!-- TIMINGS -->
+<section class="section timings" id="timings" aria-labelledby="timings-h">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="stack">
+        <span class="eyebrow">Timings</span>
+        <h2 id="timings-h">No more calling to ask.</h2>
+      </div>
+      <p class="lede">Check session timings and typical crowd levels from your phone, then pick the best time to train.</p>
+    </div>
+
+    <div class="chips" role="group" aria-label="Filter sessions">
+      <button class="chip" data-filter="all" aria-pressed="true">All Sessions</button>
+      <button class="chip" data-filter="combined" aria-pressed="false">Combined</button>
+      <button class="chip" data-filter="ladies" aria-pressed="false">Ladies Time</button>
+    </div>
+
+    <div class="rows" id="rows">
+      <div class="row" data-type="combined" data-start="480" data-end="600">
+        <span class="time">8:00 – 10:00 AM</span>
+        <span class="name">Morning Session</span>
+        <span class="who">Combined · open floor</span>
+        <span class="crowd"><span class="bars" data-level="2"><b></b><b></b><b></b></span>Moderate</span>
+        <span class="now" hidden>Now</span>
+      </div>
+      <div class="row" data-type="ladies" data-start="600" data-end="780">
+        <span class="time">10:00 AM – 1:00 PM</span>
+        <span class="name">Ladies Time</span>
+        <span class="who">Ladies trainer on the floor</span>
+        <span class="crowd"><span class="bars" data-level="1"><b></b><b></b><b></b></span>Quiet</span>
+        <span class="now" hidden>Now</span>
+      </div>
+      <div class="row" data-type="combined" data-start="780" data-end="960">
+        <span class="time">1:00 – 4:00 PM</span>
+        <span class="name">Afternoon Session</span>
+        <span class="who">Combined · open floor</span>
+        <span class="crowd"><span class="bars" data-level="1"><b></b><b></b><b></b></span>Quiet</span>
+        <span class="now" hidden>Now</span>
+      </div>
+      <div class="row" data-type="ladies" data-start="960" data-end="1080">
+        <span class="time">4:00 – 6:00 PM</span>
+        <span class="name">Ladies Time</span>
+        <span class="who">Ladies trainer on the floor</span>
+        <span class="crowd"><span class="bars" data-level="2"><b></b><b></b><b></b></span>Moderate</span>
+        <span class="now" hidden>Now</span>
+      </div>
+      <div class="row" data-type="combined" data-start="1080" data-end="1350">
+        <span class="time">6:00 – 10:30 PM</span>
+        <span class="name">Evening Session</span>
+        <span class="who">Combined · peak hours</span>
+        <span class="crowd"><span class="bars" data-level="3"><b></b><b></b><b></b></span>Busy</span>
+        <span class="now" hidden>Now</span>
+      </div>
+    </div>
+    <p class="fine" data-sample>Sample timetable shown for the concept. Final session times to be confirmed with the gym.</p>
+  </div>
+</section>
+
+<!-- COACHING -->
+<section class="section coaching" id="coaching" aria-labelledby="coach-h">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="stack">
+        <span class="eyebrow">Coaching</span>
+        <h2 id="coach-h">Coaching built around you.</h2>
+      </div>
+      <p class="lede">Professional trainers on the floor, and a plan written for your body, your schedule and your goal.</p>
+    </div>
+
+    <div class="coach-grid">
+      <article class="coach">
+        <div class="num">01</div>
+        <div>
+          <h3>Personal Training</h3>
+          <span class="spec">One-to-one coaching</span>
+        </div>
+        <p>Work directly with a professional trainer to fix your form, break plateaus and push numbers you didn't think you had.</p>
+        <a href="#" data-open="tour">Inquire &rarr;</a>
+      </article>
+      <article class="coach">
+        <div class="num">02</div>
+        <div>
+          <h3>Workout &amp; Diet Plans</h3>
+          <span class="spec">Customised for your goal</span>
+        </div>
+        <p>A workout plan and a diet plan written for you, whether that's fat loss, muscle gain or strength, not a template off the internet.</p>
+        <a href="#" data-open="tour">Inquire &rarr;</a>
+      </article>
+      <article class="coach">
+        <div class="num">03</div>
+        <div>
+          <h3>Ladies Training</h3>
+          <span class="spec">Ladies time · ladies trainer</span>
+        </div>
+        <p>Dedicated ladies sessions with a ladies trainer on the floor, so you can train comfortably and get proper guidance.</p>
+        <a href="#" data-open="tour">Inquire &rarr;</a>
+      </article>
+    </div>
+    <p class="fine" data-sample>Trainer profiles with photos, credentials and specialties slot in here once supplied by the gym.</p>
+  </div>
+</section>
+
+<!-- MEMBERSHIP -->
+<section class="section membership" id="membership" aria-labelledby="mem-h">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Exclusive Opening Packages</span>
+      <h2 class="section-title" id="mem-h">Transparent, always.</h2>
+      <p>No hidden fees. Pick your term, register online, and pay by bKash, Nagad or cash at the desk.</p>
+    </div>
+
+    <div class="tiers">
+      <div class="tier hot">
+        <span class="badge">Opening Offer</span>
+        <span class="tname">3 Months</span>
+        <div class="price">
+          <span class="amt"><small>TK</small>4,799</span>
+          <span class="per">≈ TK 1,600 / month</span>
+        </div>
+        <hr>
+        <ul>
+          <li>Full gym access</li>
+          <li>Customised workout plan</li>
+          <li>Customised diet plan</li>
+          <li>Steam bath &amp; air-conditioned floor</li>
+          <li>Combined &amp; ladies time</li>
+        </ul>
+        <button data-open="3m">Get Started</button>
+      </div>
+
+      <div class="tier">
+        <span class="tname">6 Months</span>
+        <div class="price">
+          <span class="amt"><small>TK</small><span id="price6">X,XXX</span></span>
+          <span class="per">6-month opening price</span>
+        </div>
+        <hr>
+        <ul>
+          <li>Full gym access</li>
+          <li>Customised workout plan</li>
+          <li>Customised diet plan</li>
+          <li>Steam bath &amp; air-conditioned floor</li>
+          <li>Combined &amp; ladies time</li>
+        </ul>
+        <button data-open="6m">Get Started</button>
+      </div>
+
+      <div class="tier">
+        <span class="badge" style="background: var(--accent); color: var(--on-accent);">Best Value</span>
+        <span class="tname">1 Year</span>
+        <div class="price">
+          <span class="amt"><small>TK</small>10,499</span>
+          <span class="per">≈ TK 875 / month</span>
+        </div>
+        <hr>
+        <ul>
+          <li>Full gym access</li>
+          <li>Customised workout plan</li>
+          <li>Customised diet plan</li>
+          <li>Steam bath &amp; air-conditioned floor</li>
+          <li>Combined &amp; ladies time</li>
+        </ul>
+        <button data-open="12m">Get Started</button>
+      </div>
+    </div>
+
+    <div class="pay" aria-label="Payment methods">
+      <span>Pay with</span>
+      <span class="m">bKash</span>
+      <span class="m">Nagad</span>
+      <span class="m">Cash</span>
+      <span class="m">Cheque</span>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="section visit" id="visit" aria-labelledby="visit-h">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="stack">
+        <span class="eyebrow">Visit</span>
+        <h2 id="visit-h">Come see the new floor.</h2>
+      </div>
+      <p class="lede">Walk in any day, or book a free tour and we'll show you around.</p>
+    </div>
+
+    <div class="visit-grid">
+      <div class="info">
+        <span class="k">Find us</span>
+        <span class="v">Satmasjid Road, Dhanmondi</span>
+        <span class="s">Near Star Kabab · Dhaka</span>
+      </div>
+      <div class="info">
+        <span class="k">Open daily</span>
+        <span class="v">8:00 AM – 10:30 PM</span>
+        <span class="s">Saturday to Friday</span>
+      </div>
+      <div class="info">
+        <span class="k">Call us</span>
+        <span class="v"><a href="tel:+8801761191187" data-phone style="color: inherit;">01761-191187</a></span>
+        <span class="s">Questions about packages? Just ask.</span>
+      </div>
+    </div>
+
+    <div class="visit-actions">
+      <button class="btn btn-primary" data-open="tour">Book a Free Tour</button>
+      <a class="btn btn-ghost" id="mapsLink" href="#" target="_blank" rel="noopener">Get Directions</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="logo">Fitness <span>Factory</span></span>
+        <p>Satmasjid Road, Dhanmondi, Dhaka<br>Open daily 8:00 AM – 10:30 PM<br>Bigger. Better. Stronger.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h4>Explore</h4>
+          <a href="#arsenal">The Arsenal</a>
+          <a href="#timings">Timings</a>
+          <a href="#coaching">Coaching</a>
+          <a href="#membership">Membership</a>
+        </div>
+        <div class="foot-col">
+          <h4>Connect</h4>
+          <a id="fbLink" href="#" target="_blank" rel="noopener">Facebook</a>
+          <a id="igLink" href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="tel:+8801761191187" data-phone>01761-191187</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-rule"></div>
+    <span class="copy">&copy; <span id="year">2026</span> Fitness Factory Gym. All rights reserved.</span>
+  </div>
+</footer>
+
+<!-- COLOUR SCHEME SWITCHER -->
+<div class="theme-dock" id="themeDock" role="group" aria-label="Colour scheme" hidden>
+  <span class="dock-label">Colour scheme</span>
+  <button class="sw" type="button" data-theme-pick="volt" aria-pressed="true" title="Volt" style="--sw-bg: oklch(15% 0.006 250); --sw-ac: oklch(90% 0.21 122);"><span class="sr-only">Volt</span></button>
+  <button class="sw" type="button" data-theme-pick="crimson" aria-pressed="false" title="Crimson" style="--sw-bg: oklch(15% 0.012 20); --sw-ac: oklch(54% 0.235 27);"><span class="sr-only">Crimson</span></button>
+  <button class="sw" type="button" data-theme-pick="daylight" aria-pressed="false" title="Daylight" style="--sw-bg: oklch(97.5% 0.004 95); --sw-ac: oklch(50% 0.22 264);"><span class="sr-only">Daylight</span></button>
+  <span class="dock-name" id="themeName" aria-live="polite">Volt</span>
+</div>
+
+<!-- BOOKING MODAL -->
+<div class="overlay" id="overlay" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="close" id="closeModal" aria-label="Close">&times;</button>
+    <div id="formView">
+      <h3 id="modalTitle">Book a Free Tour</h3>
+      <p class="sub" id="modalSub">Leave your details and we'll confirm a time that suits you.</p>
+      <form id="leadForm" novalidate>
+        <div class="field">
+          <label for="fName">Your name</label>
+          <input id="fName" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="fPhone">Phone number</label>
+          <input id="fPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="01XXX-XXXXXX" required>
+        </div>
+        <div class="field">
+          <label for="fInterest">I'm interested in</label>
+          <select id="fInterest" name="interest">
+            <option value="tour">A free tour</option>
+            <option value="3m">3-month opening package · TK 4,799</option>
+            <option value="6m">6-month opening package</option>
+            <option value="12m">1-year opening package · TK 10,499</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="fTime">Best time to visit</label>
+          <select id="fTime" name="time">
+            <option>Morning</option>
+            <option>Afternoon</option>
+            <option>Evening</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Send on WhatsApp</button>
+        <p class="alt">Prefer to talk? <a href="tel:+8801761191187" data-phone>Call 01761-191187</a></p>
+        <p class="demo-note" data-sample>Concept: in the full build this form goes straight to the gym's dashboard and online checkout (bKash / Nagad).</p>
+      </form>
+    </div>
+    <div class="done" id="doneView">
+      <h3>You're on the list.</h3>
+      <p>WhatsApp should have opened with your message ready to send. If it didn't, call us on <a href="tel:+8801761191187" data-phone>01761-191187</a>.</p>
+      <button class="btn btn-ghost" id="doneClose">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // ---------- Edit these to customise the site ----------
+  const CONFIG = {
+    phoneDisplay: '01761-191187',
+    phoneIntl: '8801761191187',        // used for tel: and WhatsApp links
+    facebook: 'https://www.facebook.com/fitnessfactorygymdhanmondi/',
+    instagram: 'https://www.instagram.com/fitnessfactorygym_dhanmondi',
+    mapsQuery: 'Fitness Factory Gym Dhanmondi Satmasjid Road Dhaka',
+    price6Months: null,                // e.g. 7999 once the 6-month opening price is confirmed
+    heroVideo: '',                     // path/URL to a looping gym-floor clip (mp4)
+    photos: { freeWeights: '', legMachines: '', steam: '', lockers: '' }, // image paths/URLs
+    showPreviewBanner: true,           // "Concept preview" strip at the top
+    sampleData: true,                  // shows the small "sample data" notes; set false for launch
+    defaultTheme: 'volt',              // 'volt' | 'crimson' | 'daylight'
+    showThemeSwitcher: true            // floating colour-scheme picker; set false to lock one scheme
+  };
+  // -------------------------------------------------------
+
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+
+  // Config wiring
+  $$('[data-phone]').forEach(a => { a.textContent = CONFIG.phoneDisplay; a.href = 'tel:+' + CONFIG.phoneIntl; });
+  $('#fbLink').href = CONFIG.facebook;
+  $('#igLink').href = CONFIG.instagram;
+  $('#mapsLink').href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(CONFIG.mapsQuery);
+  $('#year').textContent = new Date().getFullYear();
+  if (CONFIG.showPreviewBanner) $('#previewStrip').hidden = false;
+  if (!CONFIG.sampleData) $$('[data-sample]').forEach(el => el.remove());
+  if (CONFIG.price6Months) $('#price6').textContent = CONFIG.price6Months.toLocaleString('en-US');
+  if (CONFIG.heroVideo) {
+    const v = document.createElement('video');
+    v.className = 'hero-video'; v.src = CONFIG.heroVideo;
+    v.autoplay = true; v.muted = true; v.loop = true; v.playsInline = true;
+    $('.hero').prepend(v);
+  }
+  $$('[data-photo]').forEach(el => {
+    const src = CONFIG.photos[el.dataset.photo];
+    if (src) { el.style.backgroundImage = `url("${src}")`; el.classList.add('has-img'); }
+  });
+
+  // Mobile menu
+  const burger = $('#burger'), panel = $('#mobilePanel');
+  burger.addEventListener('click', () => {
+    const open = panel.classList.toggle('open');
+    burger.setAttribute('aria-expanded', String(open));
+  });
+  $$('#mobilePanel a').forEach(a => a.addEventListener('click', () => { panel.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); }));
+
+  // Time helpers (Dhaka time)
+  function dhakaMinutes() {
+    const parts = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Dhaka', hour: '2-digit', minute: '2-digit', hour12: false }).formatToParts(new Date());
+    const h = parseInt(parts.find(p => p.type === 'hour').value, 10) % 24;
+    const m = parseInt(parts.find(p => p.type === 'minute').value, 10);
+    return h * 60 + m;
+  }
+  function setBars(el, level) { $$('b', el).forEach((b, i) => b.classList.toggle('on', i < level)); }
+
+  // Capacity meter (sample curve by hour of day)
+  function capacityFor(min) {
+    if (min < 480 || min >= 1350) return { level: 0, text: 'Closed — opens 8:00 AM' };
+    if (min < 600) return { level: 2, text: 'Moderate — good time to lift' };
+    if (min < 960) return { level: 1, text: 'Quiet — plenty of room' };
+    if (min < 1080) return { level: 2, text: 'Moderate — good time to lift' };
+    if (min < 1260) return { level: 3, text: 'Busy — peak hour' };
+    return { level: 2, text: 'Moderate — winding down' };
+  }
+  function updateLive() {
+    const min = dhakaMinutes();
+    const cap = capacityFor(min);
+    setBars($('#capBars'), cap.level);
+    $('#capText').textContent = cap.text;
+    $$('.row').forEach(r => {
+      const on = min >= +r.dataset.start && min < +r.dataset.end;
+      $('.now', r).hidden = !on;
+    });
+  }
+  $$('.row .bars').forEach(b => setBars(b, +b.dataset.level));
+  updateLive();
+  setInterval(updateLive, 60000);
+
+  // Timetable filter
+  $$('.chip').forEach(chip => chip.addEventListener('click', () => {
+    const f = chip.dataset.filter;
+    $$('.chip').forEach(c => c.setAttribute('aria-pressed', String(c === chip)));
+    $$('.row').forEach(r => { r.hidden = !(f === 'all' || r.dataset.type === f); });
+  }));
+
+  // Modal
+  const overlay = $('#overlay'), formView = $('#formView'), doneView = $('#doneView');
+  let lastFocus = null;
+  const copy = {
+    tour: ['Book a Free Tour', "Leave your details and we'll confirm a time that suits you."],
+    pkg:  ['Claim your opening price', "Pick your package and we'll get you registered."]
+  };
+  function openModal(kind) {
+    lastFocus = document.activeElement;
+    const isPkg = kind && kind !== 'tour';
+    $('#modalTitle').textContent = copy[isPkg ? 'pkg' : 'tour'][0];
+    $('#modalSub').textContent = copy[isPkg ? 'pkg' : 'tour'][1];
+    $('#fInterest').value = kind || 'tour';
+    formView.hidden = false; doneView.classList.remove('show');
+    overlay.classList.add('open'); overlay.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => $('#fName').focus(), 30);
+  }
+  function closeModal() {
+    overlay.classList.remove('open'); overlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  }
+  document.addEventListener('click', e => {
+    const t = e.target.closest('[data-open]');
+    if (t) { e.preventDefault(); panel.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); openModal(t.dataset.open); }
+  });
+  $('#closeModal').addEventListener('click', closeModal);
+  $('#doneClose').addEventListener('click', closeModal);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', e => {
+    if (!overlay.classList.contains('open')) return;
+    if (e.key === 'Escape') closeModal();
+    if (e.key === 'Tab') {
+      const f = $$('button, input, select, a[href]', overlay).filter(x => x.offsetParent !== null);
+      if (!f.length) return;
+      const first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+
+  $('#leadForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const name = $('#fName').value.trim(), phone = $('#fPhone').value.trim();
+    if (!name || phone.replace(/\D/g, '').length < 10) {
+      (name ? $('#fPhone') : $('#fName')).focus();
+      (name ? $('#fPhone') : $('#fName')).style.borderColor = 'var(--accent)';
+      return;
+    }
+    const labels = { tour: 'a free tour', '3m': 'the 3-month opening package (TK 4,799)', '6m': 'the 6-month opening package', '12m': 'the 1-year opening package (TK 10,499)' };
+    const msg = `Hello Fitness Factory! I'd like ${labels[$('#fInterest').value]}.\nName: ${name}\nPhone: ${phone}\nBest time to visit: ${$('#fTime').value}`;
+    window.open('https://wa.me/' + CONFIG.phoneIntl + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    formView.hidden = true; doneView.classList.add('show');
+    $('#leadForm').reset();
+  });
+  ['fName', 'fPhone'].forEach(id => $('#' + id).addEventListener('input', ev => ev.target.style.borderColor = ''));
+  // Colour schemes
+  const THEMES = { volt: 'Volt', crimson: 'Crimson', daylight: 'Daylight' };
+  const root = document.documentElement;
+  function applyTheme(id, save) {
+    if (!THEMES[id]) id = CONFIG.defaultTheme;
+    root.classList.add('theme-anim');
+    root.setAttribute('data-theme', id);
+    $$('[data-theme-pick]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.themePick === id)));
+    $('#themeName').textContent = THEMES[id];
+    if (save) { try { localStorage.setItem('ff-theme', id); } catch (e) {} }
+    clearTimeout(applyTheme.t);
+    applyTheme.t = setTimeout(() => root.classList.remove('theme-anim'), 450);
+  }
+  (function initTheme() {
+    let id = CONFIG.defaultTheme;
+    try { id = localStorage.getItem('ff-theme') || id; } catch (e) {}
+    const q = new URLSearchParams(location.search).get('theme');
+    if (q && THEMES[q]) id = q;
+    applyTheme(id, false);
+    root.classList.remove('theme-anim');
+    if (CONFIG.showThemeSwitcher) $('#themeDock').hidden = false; else $('#panelTheme').remove();
+    $$('[data-theme-pick]').forEach(b => b.addEventListener('click', () => applyTheme(b.dataset.themePick, true)));
+  })();
+</script>
+</body>
+</html>
